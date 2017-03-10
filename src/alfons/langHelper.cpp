@@ -21,7 +21,7 @@ namespace alfons {
 const std::string DEFAULT_LANGUAGES = "en:zh-cn"; // GIVING PRIORITY (BY DEFAULT) TO CHINESE OVER JAPANESE
 
 struct HBScriptForLang {
-    const char lang[7];
+    const char *lang;
     hb_script_t scripts[3];
 };
 
